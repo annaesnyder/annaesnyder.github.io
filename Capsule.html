@@ -6,44 +6,52 @@
   <title>Capsule</title>
   <style>
     body {
-      background-color: #f8f5f2; /* soft brownish background */
+      background-color: #f8f5f2;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      color: #222;
-      margin: 2rem;
+      color: #333;
+      margin: 0;
+      padding: 1rem;
+      max-width: 700px;
+      margin: 0 auto;
     }
 
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    p {
-      max-width: 600px;
-      line-height: 1.5;
-    }
-
-    .gallery {
-      margin-top: 2rem;
+    .image-stack {
       display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 2rem 0;
     }
 
-    .gallery img {
-      max-width: 250px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    .image-stack img {
+      width: 100%;
+      border-radius: 4px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+      object-fit: cover;
+    }
+
+    .caption {
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 0.25rem;
     }
   </style>
 </head>
 <body>
-  <h1>Capsule Collection</h1>
-  <p>This is a placeholder for a future capsule collection — maybe clothes, maybe something else. Check back soon.</p>
 
-  <div class="gallery">
-    <img src="images/sample1.jpg" alt="Placeholder image 1">
-    <img src="images/sample2.jpg" alt="Placeholder image 2">
-    <img src="images/sample3.jpg" alt="Placeholder image 3">
+  <div class="image-stack">
+    <div>
+      <img src="https://i.pinimg.com/564x/79/ea/3d/79ea3dfdce0a3d42244c486b4301e9cb.jpg" alt="90s fashion 1" />
+      <div class="caption">Source: 90s Vogue editorial</div>
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/564x/2a/b3/1e/2ab31e5c614b3fa69d9b4a99c70933d0.jpg" alt="90s fashion 2" />
+      <div class="caption">Source: unknown</div>
+    </div>
+    <div>
+      <img src="https://i.pinimg.com/564x/cf/8a/2e/cf8a2efb02477ae3e5533c7925089f78.jpg" alt="90s fashion 3" />
+      <div class="caption">Gwyneth in Prada</div>
+    </div>
   </div>
+
 </body>
 </html>
