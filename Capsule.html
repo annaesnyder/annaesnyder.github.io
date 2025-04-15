@@ -2,56 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Capsule</title>
   <style>
     body {
-      background-color: #f8f5f2;
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      color: #333;
       margin: 0;
-      padding: 1rem;
-      max-width: 700px;
+      background-color: #fdf6f0;
+      font-family: sans-serif;
+      color: #222;
+    }
+
+    .container {
+      max-width: 800px;
       margin: 0 auto;
+      padding: 20px;
     }
 
-    .image-stack {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-      padding: 2rem 0;
+    .photo-block {
+      margin-bottom: 40px;
     }
 
-    .image-stack img {
+    .photo-block img {
       width: 100%;
+      display: block;
       border-radius: 4px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-      object-fit: cover;
     }
 
     .caption {
-      font-size: 0.9rem;
-      color: #888;
-      margin-top: 0.25rem;
+      margin-top: 8px;
+      font-size: 14px;
+      color: #5a4d43;
+      font-style: italic;
+    }
+
+    h1 {
+      text-align: center;
+      font-weight: normal;
+      font-size: 20px;
+      margin-top: 40px;
+      margin-bottom: 60px;
+      color: #3d2e24;
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Capsule</h1>
 
-  <div class="image-stack">
-    <div>
-      <img src="https://i.pinimg.com/564x/79/ea/3d/79ea3dfdce0a3d42244c486b4301e9cb.jpg" alt="90s fashion 1" />
-      <div class="caption">Source: 90s Vogue editorial</div>
-    </div>
-    <div>
-      <img src="https://i.pinimg.com/564x/2a/b3/1e/2ab31e5c614b3fa69d9b4a99c70933d0.jpg" alt="90s fashion 2" />
-      <div class="caption">Source: unknown</div>
-    </div>
-    <div>
-      <img src="https://i.pinimg.com/564x/cf/8a/2e/cf8a2efb02477ae3e5533c7925089f78.jpg" alt="90s fashion 3" />
-      <div class="caption">Gwyneth in Prada</div>
-    </div>
-  </div>
-
-</body>
-</html>
+    <!-- Photo Block 1 -->
+    <div class="photo-block">
+      <img src="images/photo1.jpg" alt="Street fashion, Berlin" />
+      <div class="caption
